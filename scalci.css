@@ -92,7 +92,6 @@ input[type="button"].clear:hover {
   }
   .result-clear input[type="text"].result {
     height: 5vh;
-    width: 90vw;
   }
   input[type="button"] {
     width: 25%;
