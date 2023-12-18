@@ -97,4 +97,9 @@ input[type="button"].clear:hover {
     width: 25%;
     height: 3.7em;
   }
+    .grid-buttons input[type="button"]:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    transition: 0.2s ease;
+  }
 }
