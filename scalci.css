@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background: #30e8bf;
+  background: -webkit-linear-gradient(to right, #ff8235, #30e8bf);
+  background: linear-gradient(to right, #ff8235, #30e8bf);
+}
+
+#calcContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.25)
+  );
+  backdrop-filter: blur(15px) saturate(200%);
+  width: 70vw;
+  height: 90vh;
+  box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 15px;
+}
+.result-clear {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.result-clear input[type="text"].result {
+  display: block;
+  padding-top: 1%;
+  padding-left: 5%;
+  width: 72%;
+  height: 60px;
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  border-radius: 15px 0 0 0;
+}
+.grid-buttons {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+input[type="button"] {
+  flex-grow: 1;
+  width: 25%;
+  height: 4em;
+  padding: 4%;
+  border: none;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  background: transparent;
+}
+input[type="button"].clear {
+  width: 25.5%;
+  height: 4em;
+  background: #ff033e;
+  color: white;
+  border-radius: 0 15px 0 0;
+}
+.grid-buttons input[type="button"]:hover {
+  font-size: xx-large;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  transition: 0.2s ease;
+}

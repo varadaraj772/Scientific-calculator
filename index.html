@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientifc Calculator</title>
+    <link rel="stylesheet" href="scalci.css">
+    <script src="scalci.js"></script>
+  </head>
+  <body>
+    <div id="calcContainer">
+      <form name="calculator">
+        <div class="result-clear">
+          <input type="text" class="result" id="res"name="answer" readonly />
+          <input
+            type="button"
+            class="clear"
+            value="CLEAR"
+            onclick="clr()"
+          />
+        </div>
+        <div class="grid-buttons">
+          <input type="button" value="1" onclick="disp('1')" />
+          <input
+            type="button"
+            value="2"
+            onclick="disp('2')"
+          />
+          <input
+            type="button"
+            value="3"
+            onclick="disp('3')"
+          />
+          <input
+            type="button"
+            value="+"
+            onclick="disp('+')"
+            class="math"
+          />
+          <br />
+          <input
+            type="button"
+            value="4"
+            onclick="disp('4')"
+          />
+          <input
+            type="button"
+            value="5"
+            onclick="disp('5')"
+          />
+          <input
+            type="button"
+            value="6"
+            onclick="disp('6')"
+          />
+          <input
+            type="button"
+            value="&minus;"
+            onclick="disp('-')"
+            class="math"
+          />
+          <br />
+          <input
+            type="button"
+            value="7"
+            onclick="disp('7')"
+          />
+          <input
+            type="button"
+            value="8"
+            onclick="disp('8')"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="disp('9')"
+          />
+          <input
+            type="button"
+            value="*"
+            onclick="disp('*')"
+            class="math"
+          />
+          <br />
+          <input
+            type="button"
+            value="."
+            onclick="disp('.')"
+          />
+          <input
+            type="button"
+            value="0"
+            onclick="disp('0')"
+          />
+          <input
+            type="button"
+            value="="
+            onclick="calc()"
+          />
+          <input
+            type="button"
+            value="/"
+            onclick="disp('/')"
+            class="math"
+          />
+          <input
+            type="button"
+            value="Sin"
+            onclick="sin()"
+            class="math"
+          />
+          <input
+            type="button"
+            value="Cos"
+            onclick="cos()"
+            class="math"
+          />
+          <input
+            type="button"
+            value="Tan"
+            onclick="tan()"
+            class="math"
+          />
+          <input
+            type="button"
+            value=&radic;
+            onclick="SquareRoot()"
+            class="math"
+          />
+          <input
+            type="button"
+            value=&#8731;
+            onclick="CubeRoot()"
+            class="math"
+          />
+          <input
+            type="button"
+            value=&and;
+            onclick="exp()"
+            class="math"
+          />
+          <input
+          type="button"
+          value="!"
+          onclick="factorial()"
+          class="math"
+        />
+        <input
+          type="button"
+          value="1/x"
+          onclick="onebyx()"
+          class="math"
+        />
+      </form>
+    </div>
+  </body>
+</html>
